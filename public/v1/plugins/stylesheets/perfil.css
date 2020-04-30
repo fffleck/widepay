@@ -1,0 +1,108 @@
+
+/*PERFIL STYLES*/
+
+
+/*sidebar*/
+#img__profile {
+    cursor: pointer;
+    max-height: 280px;
+    width: 280px;
+    margin: auto;
+    display: block;
+}
+
+#input__img_profile {
+    display: none;
+}
+
+#input__img_doc {
+    display: none;
+}
+
+#input__img_selfie {
+    display: none;
+}
+
+
+#container__profile figure figcaption {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    padding-left: 9px;
+    padding-bottom: 5px;
+    text-shadow: 0 0 10px #000;
+}
+
+.links_divulgacao a {
+    position: relative;
+    display: inline-block;
+    outline: none;
+    color: #777777;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    font-size: 1.3rem;
+
+}
+
+.links_divulgacao a:hover,
+.links_divulgacao a:focus {
+    outline: none;
+}
+
+#container__edit_profile {
+    margin: -7px;
+    float: right;
+}
+
+/*Modal Crop Image*/
+#div__crop_image .cr-boundary {
+    height: 420px;
+    overflow: hidden;
+    max-width: 300px;
+}
+
+.croppie-container .cr-boundary {
+    display: flex;
+    transform: none !important;
+}
+
+.croppie-container .cr-boundary .cr-image {
+    transform: none !important;
+}
+
+#div__crop_imageDoc.croppie-container .cr-image {
+    position: relative;
+}
+
+#div__crop_imageSelfie.croppie-container .cr-image {
+    position: relative;
+}
+
+.btn__show_kyc_instruct {
+    margin: 5px;
+}
+
+
+
+
+#textarea__copy_link {
+    position : 'fixed';
+    top : 0;
+    left :0;
+    width : '2em';
+    height : '2em';
+    padding : 0;
+    border : 'none';
+    outline : 'none';
+    boxShadow : 'none';
+    background : 'transparent';
+}
+
+img.upload_image {
+    object-fit: scale-down;
+}
+
+

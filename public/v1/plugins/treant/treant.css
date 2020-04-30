@@ -1,0 +1,98 @@
+/* required LIB STYLES */
+/* .Treant se automatski dodaje na svaki chart conatiner */
+.Treant {
+    position: relative;
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+.Treant > .node,
+.Treant > .pseudo {
+    position: absolute;
+    display: block;
+    visibility: hidden;
+}
+
+.Treant.Treant-loaded .node,
+.Treant.Treant-loaded .pseudo {
+    visibility: visible;
+}
+
+.Treant > .pseudo {
+    width: 0;
+    height: 0;
+    border: none;
+    padding: 0;
+}
+.node p{
+    margin-bottom: 5px!important;
+}
+.Treant .collapse-switch {
+    width: 3px;
+    height: 3px;
+    display: block;
+    border: 1px solid black;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    cursor: pointer;
+}
+
+.Treant .collapsed .collapse-switch {
+    background-color: #868DEE;
+}
+
+.Treant > .node img {
+    border: none;
+    /*float: left;*/
+}
+
+/* VIEW CSS */
+.chart {
+    margin: 5px;
+}
+
+.Treant > .node {
+}
+
+.Treant > p {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.node-name {
+    font-weight: bold;
+    text-align: center;
+}
+
+.node-title,.node-contact,.node-description {
+    text-align: center;
+}
+
+.nodeExample1 {
+    padding: 9px 6px 8px 6px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #b2b1b1;
+    font-family: 'Open Sans', 'arial';
+    width: 100px;
+    font-size: 10px;
+    line-height:10px;
+    text-align: center;
+}
+.node.nodeExample1 {
+    border-top: 3px solid #26b6d4;
+}
+p.node-name {
+    color: #23709e !important;
+}
+.node-title, .node-contact, .node-description{
+color: #666;}
+
+.nodeExample1 img {
+    margin-right: 10px;
+    margin-bottom: 8px;
+}
