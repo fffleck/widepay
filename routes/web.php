@@ -15,6 +15,7 @@ Route::get('set_locale/{locale}', 'LanguageController@switchLang')->name('set_lo
 
 Route::middleware(['web', 'auth'])->group(function () {
     Route::get('/', 'HomeController@index')->name('home');
-    Route::resource('produto', 'ProdutosController');
-    Route::resource('tag', 'TagsController');
+    Route::resource('urls', 'UrlsController');
+    Route::resource('contents', 'ContentsController');
+    Route::post('/urlpessquisa','UrlsController@pesquisaConteudo')->name('url.pesquisa');
 });

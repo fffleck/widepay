@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTableTags extends Migration
+class CreateTableUrls extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,14 @@ class CreateTableTags extends Migration
      */
     public function up()
     {
-        Schema::create('tag', function (Blueprint $table) {
+        Schema::create('urls', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name', 256);
+            $table->integer('user_id')->unsigned();
+            $table->string('url');
+            $table->string('nome_site');
+            $table->enum('status', ['A','I','D'])->default('A');
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
@@ -27,6 +31,6 @@ class CreateTableTags extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tag');
+        Schema::dropIfExists('urls');
     }
 }

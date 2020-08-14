@@ -87,28 +87,25 @@
                 <li class="{{ stripos($route_name, 'product') !== false ? 'active' : '' }}">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">vertical_split</i>
-                        <span>Produtos</span>
+                        <span>URLS</span>
                     </a>
                     <ul class="ml-menu">
                         <li class="{{ $route_name == 'produto.index' ? 'active' : '' }}">
-                            <a href="{{ route('produto.index') }}">Lista</a>
+                            <a href="{{ route('urls.index') }}">Lista</a>
                         </li>
                         <li class="{{ $route_name == 'produto.create' ? 'active' : '' }}">
-                            <a href="{{ route('produto.create') }}">Novo</a>
+                            <a href="{{ route('urls.create') }}">Nova</a>
                         </li>
                     </ul>
                 </li>
                 <li class="{{ stripos($route_name, 'tag') !== false ? 'active' : '' }}">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">tab</i>
-                        <span>Tags</span>
+                        <span>Status</span>
                     </a>
                     <ul class="ml-menu">
                         <li class="{{ $route_name == 'tag.index' ? 'active' : '' }}">
-                            <a href="{{ route('tag.index') }}">Lista</a>
-                        </li>
-                        <li class="{{ $route_name == 'tag.create' ? 'active' : '' }}">
-                            <a href="{{ route('tag.create') }}">Novo</a>
+                            <a href="{{ route('contents.index') }}">Ver</a>
                         </li>
                     </ul>
                 </li>

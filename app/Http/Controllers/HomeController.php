@@ -27,8 +27,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $totalTags = Tags::count();
-        $totalProdutos = Produtos::count();
-        return view('home',compact('totalTags', 'totalProdutos'));
+        return view('home');
     }
 }
